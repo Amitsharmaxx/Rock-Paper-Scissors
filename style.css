@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    
+
+    /* box-sizing: border-box; */
+}
+
+body {
+    background-color: #F3F7EC;
+    flex-direction: column;
+    display: flex;
+
+    justify-content: space-between;
+    /* min-height: 100vh; */
+    /* min-height: 100vh; */
+
+
+    overflow-x: hidden;
+
+}
+
+h1 {
+    background-color: rgb(214, 108, 24);
+    color: rgb(232, 232, 232);
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 3rem;
+    text-shadow: -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black, 1px 1px 0px black;
+    
+}
+
+.choice {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    user-select: none;
+}
+
+.choice:hover {
+    background-color: #005C78;
+    cursor: pointer;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    gap: 3rem;
+    margin-top: 5rem;
+
+
+}
+
+
+img {
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+   
+
+}
+
+img:hover {
+    transform: scale(1.1);
+    /* increase the image size by 20% */
+    transition: transform 0.3s ease-in-out;
+
+
+    /* transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); */
+
+    z-index: 1;
+    /* bring the image to the front to avoid overlap */
+}
+
+
+
+
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin-top: 2.5rem;
+    gap: 5rem;
+
+    background-color: #007bff;
+    /* Added */
+    color: white;
+    /* Added */
+    width: 100%;
+    margin: 0 auto;
+    /* Added */
+    padding: 10px 0;
+    /* Added */
+    position: absolute;
+    /* Added */
+    bottom: 105px;
+    /* Added */
+
+    text-shadow: -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black, 1px 1px 0px black;
+
+}
+
+.msg-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    /* margin: 0 auto; */
+    /* Set the width */
+    height: 60px;
+    /* Set the height */
+    background-color: #fff;
+    /* Add a background color */
+    padding: 20px;
+    /* Add some padding */
+
+    font-size: 2rem;
+    line-height: 1rem;
+
+    
+
+    
+
+}
+
+
+
+
+footer {
+    background-color: #006989;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    text-shadow: -1px -1px 0px white, 1px -1px 0px white, -1px 1px 0px white, 1px 1px 0px white;
+
+
+}
